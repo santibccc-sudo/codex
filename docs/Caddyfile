@@ -1,0 +1,10 @@
+# Sustituye este dominio por uno que controles y que apunte al servidor.
+voz.example.com {
+    handle /healthz {
+        reverse_proxy 127.0.0.1:8787
+    }
+    handle /realtime {
+        reverse_proxy 127.0.0.1:8787
+    }
+    respond 404
+}

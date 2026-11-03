@@ -1,0 +1,16 @@
+{
+  "name": "codex-watch-voice-relay",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node --env-file=.env src.js",
+    "test": "node --test",
+    "check": "node --check src.js && node --check relay.js && node --check config.js"
+  },
+  "dependencies": {
+    "https-proxy-agent": "^7.0.6",
+    "ws": "^8.18.3"
+  }
+}
